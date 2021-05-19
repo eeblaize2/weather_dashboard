@@ -30,3 +30,7 @@ header {
 .grid_row {
   height: 100%;
 }
+
+.flex_container {
+  display: flex;
+}
