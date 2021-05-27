@@ -71,7 +71,7 @@ function search_city(city_name="") {
 
             html += `<p>UV Index: <span style="background-color:${uvi_color}">${current.uvi}</span></p>`;
 
-            html += "<h3>Five Day Forecast</h3>";
+            html += "<h2>Five Day Forecast</h2>";
 
             html += "<div class='flex_container'>\n";
 
@@ -94,29 +94,6 @@ function search_city(city_name="") {
             }
 
             html += "</div>\n";
-
-
-            /*
-            html += "<table>\n";
-            html += "<tr><th>-</th>";
-            for (let i=1; i<=5; i++) {
-                html += `<th>Day ${i}</th>`;
-            }
-            html += "</tr>\n";
-
-            // Loop through each parameter (temp, humidity, etc.)
-            let param_names = ['Temperature','Humidity','Wind Speed','UV Index'];
-            // For each parameter, construct the row
-            for (param of param_names) {
-                html += `<tr><td>${param}</td>\n`;  // XXXXX
-                for (let i=1; i<=5; i++) {
-                    let data = daily[i];
-                    html += "<td>XXX</td>\n";
-                }
-                html += "</tr>\n";
-            }
-            html += "</table>\n";
-            */
 
 
             document.getElementById("general").innerHTML = html;

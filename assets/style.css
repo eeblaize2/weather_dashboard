@@ -3,7 +3,7 @@ header {
     text-align: center;
     background:  rgb(93 42 95);
     color: white;
-    border-bottom: 30px #879274;
+    
   }
 
 
@@ -13,24 +13,53 @@ header {
   }
 
 .container {
-  display:grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 100%;
-  border: 1px solid black;
+  display:flex;
+  flex-direction: row;
+ 
+
 }
 
 #city_div {
   background-color: mintcream;
+  height: 100%;
+  width: 200px;
+  padding: 25px;
+  border: 25px solid purple;
+
+
+
 }
 
 #general {
   background-color: mediumslateblue;
+  width: 1000px;
+  padding: 25px;
+  border: 10px solid black;
 }
 
+
 .grid_row {
-  height: 100%;
-}
+
+  width: 200px;
+  padding: 25px;
+
+
+} 
 
 .flex_container {
   display: flex;
+  
+
+}
+.search-button {
+  color:black;
+  font-size: 16px;
+  background:#076ac7;
+  margin: 8px;
+  padding: 8px 19.2px;
+}
+.form-input {
+  background: white;
+  margin: 8px;
+  padding: 12px;
 }
