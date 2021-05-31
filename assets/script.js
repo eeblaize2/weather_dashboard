@@ -61,15 +61,18 @@ function search_city(city_name="") {
                 uvi_color = "green"; 
             } else if (current.uvi < 6) {
                 uvi_color = "yellow";
+                uvi_text_color = "black";
             } else if (current.uvi < 8){
                 uvi_color = 'orange';
+                uvi_text_color = "black";
             } else if (current.uvi < 11){
                 uvi_color = 'red';
             } else { 
-                uvi_color = 'violet'; 
+                uvi_color = 'violet';
+                uvi_text_color = "black"; 
             } 
 
-            html += `<p>UV Index: <span style="background-color:${uvi_color}">${current.uvi}</span></p>`;
+            html += `<p>UV Index: <span style="color:${uvi_text_color};background-color:${uvi_color}">${current.uvi}</span></p>`;
 
             html += "<h2>Five Day Forecast</h2>";
 

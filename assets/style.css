@@ -1,8 +1,9 @@
 header {
     padding: 40px;
     text-align: center;
-    background:  rgb(93 42 95);
+    background:  rgb(16, 61, 156);
     color: white;
+    border: 25px solid white
     
   }
 
@@ -13,44 +14,30 @@ header {
   }
 
 .container {
-  display:flex;
-  flex-direction: row;
- 
-
-}
+} 
 
 #city_div {
   background-color: mintcream;
-  height: 100%;
-  width: 200px;
   padding: 25px;
-  border: 25px solid purple;
-
-
-
+  border: 25px solid turquoise;
 }
 
 #general {
-  background-color: mediumslateblue;
-  width: 1000px;
+  background-color: rgb(16, 61, 156);
+  /*width: 1000px;*/
   padding: 25px;
   border: 10px solid black;
+  color: white;
 }
-
-
-.grid_row {
-
-  width: 200px;
-  padding: 25px;
-
-
-} 
 
 .flex_container {
-  display: flex;
-  
-
+  display:flex;
 }
+
+.flex_container div {
+  flex-basis: 20%;
+}
+
 .search-button {
   color:black;
   font-size: 16px;
@@ -62,4 +49,16 @@ header {
   background: white;
   margin: 8px;
   padding: 12px;
+}
+
+/* Larger than mobile */
+@media screen and (min-width: 480px) {
+
+  .container {
+    display:grid;
+    /*flex-direction: column;*/
+    grid-template-columns: 300px auto;
+    border:1px solid red;
+  }
+
 }
